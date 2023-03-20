@@ -1,0 +1,142 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 55px;
+    transition: ease-in .4s;
+    margin-left: 25px;
+}
+header .logo:hover {
+    transform: scale(1.5);
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: #f7f7f7;
+    font-weight: bolder;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50px;
+    transition: ease-in .5s;
+}
+header ul li a:hover {
+    background: none;
+    color: black;
+    transform: scale(1.2);
+}
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2 {
+    color: black;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-weight: bolder;
+}
+
+.content .textBox h2 span {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900px;
+}
+.content .textBox p {
+    color: black;
+}
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #333;
+    border-radius: 45px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #f7f7f7;
+    transition: ease-in .4s;
+}
+.content .textBox a:hover {
+    transform: scale(1.2);
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px;
+    margin-top: 70px;
+}
+.content .imgBox img {
+    max-width: 300px;
+}
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+.thumb li img {
+    max-width: 50px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    clip-path: circle(600px at right 800px);
+}
